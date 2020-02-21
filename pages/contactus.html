@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Getting In Touch | Metal Gutter Company South West </title>
+  <meta charset="utf-8">
+
+  <meta name="description" content="Supplier & Installer of Metal Guttering, Rainwater Systems in the South West. Including Aluminium, Cast-Iron, Steel & Copper. Carpentry services also available.">
+  <meta name="keywords" content="Metal Gutter Company, Steve Jones Guttering, Guttering Devon and Cornwall, Cast Iron Guttering Downpipes, Aluminium Guttering Downpipes and Box Gutters, Galvanised Steel Guttering Downpipes, Carpentry and Traditional Timber Fascia, Plymouth and Tavistock and South Hams, Hopper Heads and Fascias and Soffits, Rock and Looe and Fowey">
+  <link rel="icon" href="../images/logos/logo2.png">
+
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/otherpages.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css?family=Quattrocento:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700&display=swap" rel="stylesheet">
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+
+<body>
+  <header>
+    <section class="container">
+      <div class="primary-header">
+        <h1>
+          <a href="../index.html">Metal Gutter Company</a>
+        </h1>
+      </div>
+    </section>
+  </header>
+
+  <section class="navigation group">
+    <div class="container">
+      <label for="toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </label>
+      <input type="checkbox" id="toggle"/>
+
+      <ul class="menu">
+        <li><a href="./aboutus.html">About Us</a>
+        <li><a href="./portfolio.html">Portfolio</a>
+        <li><a href="./styles.html">Styles</a>
+        <li class="active"><a href="./contactus.html">Quotes</a>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="line-red">
+    </div>
+  </section>
+
+  <section class="title">
+    <div class="container">
+      <h2>
+        Receive a free consultation & quotation upon request.
+      </h2>
+    </div>
+  </section>
+
+  <section class="text">
+    <div class="container">
+      <div class="quote">
+        <p>
+          Contact us with the <strong>form</strong> below to organise a meeting to receive a quotation.<br>
+          Equally, you can get hold of us by <strong>mobile</strong> or <strong>e-mail</strong>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="formcontent">
+    <div class="container">
+      <div class="formcontainer">
+        <div class="form col5">
+          <form method="post" action="acknowledge.php">
+            <label for="firstname">First name :</label>
+            <input type="text" name="name" id="firstname">
+
+            <label for="lastname">Last name :</label>
+            <input type="text" name="surname" id="lastname">
+
+            <label for="email">Email :</label>
+            <input type="email" name="email" id="email">
+
+            <input type="email" name="email" id="hobbies">
+
+            <label for="number">Contact Number :</label>
+            <input type="text" name="phone" id="phone">
+
+            <label for="comments">Message :</label>
+            <textarea name="comments" id="comments" placeholder="Enter text here..."></textarea>
+
+            <?php
+            require_once('recaptchalib.php');
+            $publickey = "6LeR79EUAAAAAG_IY5_RDRiNarKRY1Ba7cCDEXkT"; // you got this from the signup page
+            echo recaptcha_get_html($publickey);
+            ?>
+            <div class="g-recaptcha" style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;" data-sitekey="6LeR79EUAAAAAG_IY5_RDRiNarKRY1Ba7cCDEXkT"></div>
+            <br>
+
+            <input class="button" type="submit" name="send" value="Send Message">
+          </form>
+        </div><!--
+        --><div class="map col5">
+          <p>
+            <!--AIzaSyDCGhiYvb9ktSd_poauh9M6rcfLRDsER_M!-->
+            <iframe class="iframe"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31899.068095063987!2d-4.151723217596864!3d50.41372776431424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x16ed7bf297df52be!2sMetal+Gutter+Company+South+West!5e0!3m2!1sen!2suk!4v1497455111534"
+              frameborder="0"
+              allowfullscreen>
+            </iframe>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="line-white">
+    </div>
+  </section>
+
+  <footer class="container">
+    <div class="primary-footer">
+      <div class="business">
+        <p><strong>Metal Gutter Co.</strong></p>
+        <p class="address">
+          51 Bethany Gardens,<br>
+          Plymouth,<br>
+          PL23FG<br>
+        </p>
+      </div>
+
+      <div class="contact">
+        <p>
+          Metalgutterco2001@gmail.com<br>
+          07866389802<br>
+        </p>
+        <a target="_blank" href="http://www.twitter.com/MetalGutter2001"><img alt="Twitter Page" src="../images/tags/twitter.png"></a>
+        <a target="_blank" href="https://www.facebook.com/Metal-Gutter-Company-South-West-243278799478103/"><img alt="Facebook Page" class="facebook" src="../images/tags/facebook.png"></a>
+        <a href="mailto:metalgutterco2001@gmail.com"><img alt="Email Us" src="../images/tags/email.png"></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

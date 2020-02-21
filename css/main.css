@@ -1,0 +1,296 @@
+/*
+The following CSS is to reset and then layout the basic structure for every page.
+This includes, most importantly, the general styling, header and footer.
+*/
+
+/* CSS Reset */
+
+/*
+Code to perform a CSS reset, this resets any default styling performed by the browser.
+It was taken from the below website and was written by E.A Meyer 26-01-2011
+Accessed 17-10-2019
+https://learn.shayhowe.com/html-css/building-your-first-web-page/#using-css-resets
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Clearfix */
+
+.group:before, .group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+}
+
+/* Box-Sizing */
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Columns */
+
+.preview img {
+  margin-bottom: 10px;
+  max-width: 100%;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+
+.col12 {
+  width: 50%;
+}
+
+.col13 {
+  width: 33.33%;
+}
+
+.col13, .col12, .col4, .col6 {
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (max-width:768px) {
+  .col13, .col12 {
+    width:100%;
+    padding-bottom: 15px;
+  }
+}
+
+/* Container */
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* Body */
+
+@font-face {
+  font-family: 'TimeScrDMed';
+  src: url('TimeScrDMed.woff') format('woff'),
+  url('TimeScrDMed.ttf') format('truetype');
+}
+
+body {
+  /* CC2424;bf1c1c */
+  background: #bf1c1c;
+  color: #fff;
+  font: 400 16px/22px "Quattrocento", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Typography */
+
+h1, h2, h3, h4, h5, h6, header li, p {
+  font-family: "Quattrocento", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, p {
+  color: #bf1c1c;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 2.375rem;
+  line-height: 2.75rem;
+  font-family: TimeScrDMed;
+}
+
+h2 {
+  font-size: 2.125rem;
+  line-height: 2.75rem;
+  font-family: TimeScrDMed;
+}
+
+h3 {
+  font-size: 1.75rem;
+  line-height: 2rem;
+  font-family: TimeScrDMed;
+}
+
+h4 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+h5 {
+  font-size: 0.875rem;
+}
+
+h3, h4, p {
+  color: #fff;
+}
+
+p {
+  font-size: 1.000em;
+  line-height:1.250em;
+}
+
+/* Row Formatting */
+
+.row {
+  background-color: #bf1c1c;
+}
+
+.row-alt {
+  background-color: #fff;
+}
+
+.row-alt p {
+  color: black;
+}
+
+/* Links */
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f2f2f2;
+}
+
+/* Burger Menu */
+
+@media (max-width: 768px) {
+  .navigation label, .index-label {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 0 5px;
+  }
+}
+
+/* Buttons */
+
+.btn {
+  background-color:#CC2424;
+  color:white;
+  border:1px solid #CC2424;
+  display: inline-block;
+  text-align: center;
+  border-radius:5px;
+  margin: 20px 0;
+  padding: 10px 15px;
+  transition: background .5s;
+}
+
+.btn:hover {
+  color:#CC2424;
+  background-color:#ffffff;
+  text-decoration:none;
+  cursor: pointer;
+  border:1px solid #CC2424;
+  transition: background .5s;
+}
+
+/* Quote Row */
+
+.row-alt {
+  text-align: center;
+  padding: 0 15px;
+}
+
+.row-alt p, .row-alt h3 {
+  color: black;
+}
+
+.row-alt h3 {
+  margin: 20px 0 10px 0;
+}
+
+.row-alt .btn {
+  padding: 10px 15px;
+}
+
+/* Footer */
+
+footer {
+  background-color:#bf1c1c;
+}
+
+.primary-footer {
+  margin: 15px;
+  color:white;
+}
+
+.primary-footer img {
+  width:25px;
+}
+
+.business {
+  display:inline-block;
+}
+
+.contact {
+  float:right;
+  text-align:right;
+  color:white;
+}
+
+.primary-footer strong {
+  font-weight: 900;
+}
+
+@media (max-width:768px) {
+  .business, .contact {
+    text-align: center;
+    display: block;
+    float:none;
+    margin: 20px 0 10px 0;
+  }
+}
